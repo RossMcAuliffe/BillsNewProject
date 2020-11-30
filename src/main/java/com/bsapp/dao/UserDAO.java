@@ -25,8 +25,7 @@ public class UserDAO {
 
   
         User tempUser = new User();
-
-
+        
         tempUser.setEmail("admin@admin.com");
         tempUser.setId(1);
         tempUser.setFirstName("Admin");
