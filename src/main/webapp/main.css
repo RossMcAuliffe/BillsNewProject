@@ -64,6 +64,12 @@ body {
   -webkit-text-stroke: 0.7px #ffffff;
   font-size: 72px;
 }
+.description h2 {
+  color: #ffffff;
+  -webkit-text-stroke: 0.7px #333333;
+  font-size: 42px;
+}
+
 .description p {
   color: #fff;
   font-size: 1.3rem;
@@ -194,10 +200,6 @@ span.psw {
     color: white;
 }
 
-.h5 {
-    width: 10px;
-    height:10px;
-}
 
 .sidenav {
   height: 100%;
