@@ -9,14 +9,26 @@
         <servlet-name>UserDAO.java</servlet-name>
         <servlet-class>com.bsapp.dao</servlet-class>
     </servlet>
+        <servlet>
+        <servlet-name>HomePageServlet</servlet-name>
+        <servlet-class>com.bsapp.servlets.HomePageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HomePageServlet</servlet-name>
+        <url-pattern>/Home</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/LoginServlet</url-pattern>
     </servlet-mapping>
-
+ 
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
+        <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
 </web-app>
