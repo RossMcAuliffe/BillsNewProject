@@ -1,4 +1,4 @@
-
+<%@page import="com.bsapp.model.User"%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -51,28 +51,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
   <script src="main.js"></script>
   
- <!--   <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="#">Project name</a>
-          <div class="nav-collapse collapse">
-            <p class="navbar-text pull-right">
-              Logged in as <a href="#" class="navbar-link">Username</a>
-            </p>
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse 
-        </div>
-      </div>
-    </div> -->
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">OSHIRT</a>
@@ -109,22 +88,79 @@
      <header class="page-header header container-fluid">
         <div class="overlay"></div>
         <div class="description">
-        <h1>OSHIRT</h1>
-        <h2>Admin Page</h2>
-        <a href="home.html">
-         <button class="btn btn-outline-secondary btn-lg">Browse Products</button>   
+            <br><br><br><br><br>
+        <h1>Admin</h1>
+        <h2>
+              <% User user2 = (User)session.getAttribute("SKUSER"); %>
+              Logged in as <a href="#" class="navbar-link"><%= user2.getFirstName() %></a>
+        </h2>
+        <a href="index.jsp">
+         <button class="btn btn-outline-secondary btn-lg">View Products</button>
+        </a>
+        <h1> </h1>
+        <a href="#">
+         <button class="btn btn-outline-secondary btn-lg">Edit Products</button>
+        </a>
+        <br>
+        <a href="#">
+         <button class="btn btn-outline-secondary btn-lg">Make Shipments</button>
+        </a>
+        <h1> </h1>
+        <a href="#.jsp">
+         <button class="btn btn-outline-secondary btn-lg">Confirm Delivery</button>
         </a>
         </div>
     </header> 
-
-<!-- <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div> 
+        
+        
+   <!-- /container -->
+  <div class="container features">
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <h3 class="feature-title">Member Rewards</h3>
+      <img src="columnPhoto1.jpeg" class="img-fluid"/>
+      <p>Want more from your account? Join our Members programs for Exclusive products, discounts and rewards. </p>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <h3 class="feature-title">Customer Service</h3>
+      <img src="columnPhoto2.jpeg" class="img-fluid">
+      <p>Browse our FAQ (frequently asked questions) or speak directly to one our expert customer advisor staff.</p>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12"> 
+        <h3 class="feature-title">Get in Touch!</h3>
+<div class="form-group">
+  <input type="text" class="form-control" placeholder="Name" name="">
+</div>
+<div class="form-group">
+  <input type="email" class="form-control" placeholder="Email Address" name="email">
+    </div>
+    <div class="form-group">
+    <textarea class="form-control" rows="4"></textarea>
+    </div>
+    <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+    </div>
+  </div> 
+</div>
  
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-12">
+      <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <h6 class="text-uppercase font-weight-bold">Contact</h6>
+      <p>742 Evergreen Terrace, Springfield, Califoria.
+      <br/>info@mywebsite.com
+      <br/>+ 01 000 00 00
+      <br/>+ 01 000 00 00</p>
+    </div>
+  </div>
+  <div class="footer-copyright text-center">© 2020 Copyright: MyWebsite.com</div>
+</footer>
+ <!--
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="span3">
@@ -143,6 +179,7 @@
 
             </ul>
           </div><!--/.well -->
+ 
 <!--        </div><!--/span-->
  
 <!--
@@ -202,7 +239,7 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <!--<script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/jquery.js"></script>
     <script src="../assets/js/bootstrap-transition.js"></script>
     <script src="../assets/js/bootstrap-alert.js"></script>
     <script src="../assets/js/bootstrap-modal.js"></script>
@@ -214,7 +251,7 @@
     <script src="../assets/js/bootstrap-button.js"></script>
     <script src="../assets/js/bootstrap-collapse.js"></script>
     <script src="../assets/js/bootstrap-carousel.js"></script>
-    <script src="../assets/js/bootstrap-typeahead.js"></script> -->
+    <script src="../assets/js/bootstrap-typeahead.js"></script> 
     
   </body>
 </html>
