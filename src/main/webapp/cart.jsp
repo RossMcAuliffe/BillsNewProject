@@ -3,10 +3,11 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Murach's Java Servlets and JSP</title>
-    <link rel="stylesheet" href="main.css" type="text/css"/>
+    <title>SHIRT Cart</title>
+    <link rel="stylesheet" href="cart.css" type="text/css"/>
 </head>
-<body>
+
+
     <h1>Your cart</h1>
     
     <table>
@@ -24,6 +25,7 @@
             <form action="cart" method="post">
                 <input type="hidden" name="productId" 
                        value="<c:out value='${item.product.id}'/>">
+                
                 <input type=text name="quantity" 
                        value="<c:out value='${item.quantity}'/>"  
                        id="quantity">
@@ -63,4 +65,6 @@
         All rights reserved.</p>
 
 </body>
+  
+
 </html>

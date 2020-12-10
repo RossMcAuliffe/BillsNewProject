@@ -69,13 +69,13 @@
               <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="item.html">Catalog</a>
+              <a class="nav-link" href="#">Catalog</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="secondform.html">Login</a>
+              <a class="nav-link" href="#">Login</a>
             </li>
             <li>
             <a class="nav-link" href="#"><img  src="userIcon2.png" width="30" height="30"/></a>
@@ -147,8 +147,8 @@
     <div class="row">
       <div class="col-lg-8 col-md-8 col-sm-12">
       <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
+       <p>OSHIRT is the industry leader for designer shirts and ties. Ralph Lauren, Tommy Hilfiger and more. All available on demand and in stock.</p>
+      <p>Make sure to check out our member rewards. To get updates about our lastest products, receive exclusive discounts and much more.  </p>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-12">
       <h6 class="text-uppercase font-weight-bold">Contact</h6>
@@ -158,7 +158,7 @@
       <br/>+ 01 000 00 00</p>
     </div>
   </div>
-  <div class="footer-copyright text-center">© 2020 Copyright: MyWebsite.com</div>
+  <div class="footer-copyright text-center">© 2020 Copyright: OHSIRT.com</div>
 </footer>
 <!--
     <div class="navbar navbar-inverse navbar-fixed-top">

@@ -115,16 +115,16 @@
                   <a href="#" style="color:#333333">${topProduct.name}</a>
                 </h4>
                   <h5>£ ${topProduct.price}</h5>
-                <p class="card-text">${topProduct.description}</p>
-              </div>
-               
-              <form action="cart" method="post">
+                <p class="card-text">${topProduct.description}</p>    
+                
+               <form action="cart" method="post">
                     <input type="hidden" name="productId" 
                            value="${topProduct.id}">
                     <input type="submit" 
                            value="Add To Cart">
-              </form>
-              
+              </form>         
+                    
+              </div>           
               <div class="card-footer">
                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
               </div>
@@ -144,13 +144,26 @@
   </div>
   <!-- /.container -->
 
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+     <!-- Footer -->
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-12">
+      <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
+      <p>OSHIRT is the industry leader for designer shirts and ties. Ralph Lauren, Tommy Hilfiger and more. All available on demand and in stock.</p>
+      <p>Make sure to check out our member rewards. To get updates about our lastest products, receive exclusive discounts and much more.  </p>
     </div>
-    <!-- /.container -->
-  </footer>
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <h6 class="text-uppercase font-weight-bold">Contact</h6>
+      <p>742 Evergreen Terrace, Springfield, Califoria.
+      <br/>info@mywebsite.com
+      <br/>+ 01 000 00 00
+      <br/>+ 01 000 00 00</p>
+    </div>
+  </div>
+  <div class="footer-copyright text-center">© 2020 Copyright: OSHIRT.com</div>
+</footer>
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
