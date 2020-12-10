@@ -14,9 +14,18 @@ public class Product {
     private long id;
     private String name;
     private String description;
-    private float price;
+    private double price;
     private String imageLocation;
 
+    public Product(long id, String name , double price , String imageLocation, String description){
+        
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.imageLocation = imageLocation;
+        this.description = description;
+
+    }
     /**
      * @return the id
      */
@@ -62,14 +71,14 @@ public class Product {
     /**
      * @return the price
      */
-    public float getPrice() {
+    public double getPrice() {
         return price;
     }
 
     /**
      * @param price the price to set
      */
-    public void setPrice(float price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 

@@ -7,7 +7,7 @@ package com.bsapp.servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -35,7 +35,7 @@ public class HomePageServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         
         ProductService pServ = new ProductService();
-        ArrayList<Product> topProducts = pServ.getHomePageProducts();
+        List<Product> topProducts = pServ.getHomePageProducts();
         
         request.setAttribute("products", topProducts);
         request.getRequestDispatcher("/homepage.jsp").forward(request, response);

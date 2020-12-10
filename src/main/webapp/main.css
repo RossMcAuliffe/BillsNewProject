@@ -199,4 +199,36 @@ span.psw {
 .h4 {
     color: white;
 }
+.btn-cart {
+  border:1px solid #ffffff;
+  background:#333333;
+  border-radius: 10px;
+  color:#fff;
+}
 
+
+/* The styles for the elements */
+
+br {
+    clear: both;
+}
+
+#quantity {
+    width: 2em;
+}
+
+/* The styles for the tables */
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 50em;
+    
+}
+th, td {
+    border: 1px solid black;
+    text-align: left;
+    padding: .5em;
+}
+.right {
+    text-align: right;
+}

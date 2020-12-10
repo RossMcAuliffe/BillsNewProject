@@ -6,7 +6,7 @@
 package service;
 
 import com.bsapp.dao.ProductDAO;
-import java.util.ArrayList;
+import java.util.List;
 import model.Product;
 
 /**
@@ -15,10 +15,10 @@ import model.Product;
  */
 public class ProductService {
     
-    public ArrayList<Product> getHomePageProducts(){
+    public List<Product> getHomePageProducts(){
         
         ProductDAO pDao = new ProductDAO();
-        return pDao.getTopProducts(6);
+        return pDao.getProducts();
         
     }
         

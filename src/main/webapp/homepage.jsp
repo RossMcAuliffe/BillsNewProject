@@ -1,6 +1,8 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <html lang="en">
 
 <head>
@@ -115,6 +117,14 @@
                   <h5>£ ${topProduct.price}</h5>
                 <p class="card-text">${topProduct.description}</p>
               </div>
+               
+              <form action="cart" method="post">
+                    <input type="hidden" name="productId" 
+                           value="${topProduct.id}">
+                    <input type="submit" 
+                           value="Add To Cart">
+              </form>
+              
               <div class="card-footer">
                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
               </div>
