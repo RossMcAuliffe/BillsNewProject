@@ -97,18 +97,7 @@
         <a href="index.jsp">
          <button class="btn btn-outline-secondary btn-lg">View Products</button>
         </a>
-        <h1> </h1>
-        <a href="#">
-         <button class="btn btn-outline-secondary btn-lg">Edit Products</button>
-        </a>
-        <br>
-        <a href="#">
-         <button class="btn btn-outline-secondary btn-lg">Make Shipments</button>
-        </a>
-        <h1> </h1>
-        <a href="#.jsp">
-         <button class="btn btn-outline-secondary btn-lg">Confirm Delivery</button>
-        </a>
+       
         </div>
     </header> 
 
